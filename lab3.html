@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №2 – Варіант 2 + доповнення</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tasks.css">
+    <script src="js/lab3_task1.js"></script>
+    <script src="js/lab3_task2.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Лабораторна робота №3</h1>
+            <div class="student-info">
+                <p><strong>Студент:</strong> Алєксєєв Д. І.</p>
+                <p><strong>Група:</strong> АнД-31</p>
+                <p><strong>Варіант:</strong> 2</p>
+            </div>
+            <nav class="menu">
+                <a href="index.html">Головна</a>
+            </nav>
+            <h2>Завдання 1:</h2>
+            <p>2. У поле вводу вводиться країна і натискається Enter. При натисканні на
+            Enter зробіть так, щоб введені країни записувалися в абзац під поле вводу через
+            кому. Тобто по кожному натискання Enter в абзац будуть додаватися все нові і
+            нові країни.</p>
+            <h2>Завдання 2:</h2>
+            <p>2. Дана таблиця з числами. При натисканні на кнопку в поле введення
+            під таблицею відобразіть числа з таблиці. Виведення виконати через кому в
+            порядку зростання чисел.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="task">
+            <h2>1: Ввід країн</h2>
+            <input type="text" id="countryInput" placeholder="Введіть країну..." />
+            <p id="countriesList">Додані країни: <span id="countriesOutput"></span></p>
+        </section>
+
+        <section class="task">
+            <h2>Сортування чисел з таблиці</h2>
+            <table id="numbersTable">
+                <tr><td>34</td><td>7</td><td>23</td></tr>
+                <tr><td>64</td><td>1</td><td>12</td></tr>
+                <tr><td>55</td><td>8</td><td>19</td></tr>
+            </table>
+            <button id="sortBtn">Відсортувати числа</button>
+            <p>Результат: <span id="sortedNumbers"></span></p>
+        </section>
+    </main>
+</body>
+</html>
