@@ -1,13 +1,29 @@
 function addCountry() {
     const input = document.getElementById("countryInput");
     const output = document.getElementById("countriesOutput");
-    
-    if (input.value.trim() === "") return;
 
     const country = input.value.trim();
-    const current = output.textContent;
+    if (country === "") return;
 
-    output.textContent = current ? current + ", " + country : country;
+    const allowed = [
+        "Україна", "Польща", "Німеччина", "Франція", "Іспанія", "Італія", 
+        "США", "Канада", "Туреччина", "Єгипет", "Греція", "Чехія", 
+        "Угорщина", "Португалія", "Хорватія", "Болгарія", "Грузія", "Таїланд"
+    ];
+
+    const found = allowed.find(c => c.toLowerCase() === country.toLowerCase());
+
+    if (!found) {
+        return;
+    }
+
+    if (output.textContent.toLowerCase().includes(country.toLowerCase())) {
+        return;
+    }
+
+    const text = output.textContent;
+    output.textContent = text ? text + ", " + found : found;
+    if (error) error.textContent = "";
     input.value = "";
 }
 
