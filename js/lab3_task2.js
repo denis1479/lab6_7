@@ -16,4 +16,4 @@ function initSortButton() {
             .addEventListener("click", sortTableNumbers);
 }
 
-document.addEventListener("DOMContentLoaded", initSortButton())
+document.addEventListener("DOMContentLoaded", initSortButton)

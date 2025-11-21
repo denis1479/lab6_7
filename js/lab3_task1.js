@@ -20,4 +20,4 @@ function initCountryInput() {
             });
 }
 
-document.addEventListener("DOMContentLoaded", initCountryInput())
+document.addEventListener("DOMContentLoaded", initCountryInput)

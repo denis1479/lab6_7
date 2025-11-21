@@ -110,4 +110,4 @@ function showConcerts() {
     document.getElementById("concerts").innerHTML = output;
 }
 
-document.addEventListener("DOMContentLoaded", showConcerts())
+document.addEventListener("DOMContentLoaded", showConcerts)
